@@ -40,7 +40,7 @@ def sendEmail(title):
 current,title = checkPrice()
 # print(title)
 while True:
-    if current == checkPrice()[0]:
+    if not current == checkPrice()[0]:
         sendEmail(title)
         current = checkPrice()
     time.sleep(21600)
